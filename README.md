@@ -6,44 +6,44 @@ Before you go to the link you can add a control message
 
 ![BackgroundImage](https://e.top4top.net/p_10232pajr1.png)_
 ![BackgroundImage](https://f.top4top.net/p_1023smjdb2.png) 
-![BackgroundImage](https://a.top4top.net/p_1023xtv8e3.png)_ 
+![BackgroundImage](https://a.top4top.net/p_1023xtv8e3.png)
 
 
 ### Text one
 
 ```javascript
 
-swal({
-    title: "Installer..?",
-    text: "Do you want the installation!!",
-     icon: "warning",
-    buttons: true,
-})
+swal("Good job!", "You clicked the button!", "success");
+
 ```
 
 #### messages edit
 ```javascript
-    title: "title",
-   text: "text ",
-    icon: "warning",
-   
     
-   swal({
-  title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this imaginary file!",
-  icon: "warning",
-  buttons: true,
-  dangerMode: true,
-})
-.then((willDelete) => {
+    
+    swal({
+    title: "Installer..?",
+    text: "Do you want the installation!!",
+     icon: "warning",
+    buttons: true,
+}).then((willDelete) => {
   if (willDelete) {
-    swal("Poof! Your imaginary file has been deleted!", {
+    swal("The application you requested is equipped to install", {
       icon: "success",
-    });
-  } else {
-    swal("Your imaginary file is safe!");
-  }
+       button: "installer",
+    }).then(function() {
+    window.location = "itms-services://?action=download-manifest&url=https://dzmohaipa.com/Jb2017/ElectraiOS113mu.plist";
 });
+  } else {
+   swal({
+  title: "Thanks You!",
+  text: "For using our store",
+  icon: "error",
+});
+  }
+})
+
+
 ```
 
 
@@ -52,6 +52,51 @@ swal({
  buttons: ["Oh noez!", "Aww yiss!"],
 ```
 
+### Add Press the button
+```javascript
+
+Html 
+
+
+<button class="btn btn-dark downprofile a" onclick="installer()">  
+	installer
+	</button>
+    
+   
+   javascript
+   
+   
+   function installer(){
+ 
+swal({
+    title: "Installer..?",
+    text: "Do you want the installation!!",
+     icon: "warning",
+    buttons: true,
+}).then((willDelete) => {
+  if (willDelete) {
+    swal("The application you requested is equipped to install", {
+      icon: "success",
+       button: "installer",
+    }).then(function() {
+    window.location = "itms-services://?action=download-manifest&url=https://dzmohaipa.com/Jb2017/ElectraiOS113mu.plist";
+});
+  } else {
+   swal({
+  title: "Thanks You!",
+  text: "For using our store",
+  icon: "error",
+});
+  }
+})
+ 
+}
+   
+   
+   
+    
+
+```
 
 ### Add link 
 
