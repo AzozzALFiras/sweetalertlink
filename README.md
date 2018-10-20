@@ -1,5 +1,7 @@
 sweetalertlink
 ============
+Before you go to the link you can add a control message
+
 
 
 ![BackgroundImage](https://e.top4top.net/p_10232pajr1.png)_
@@ -65,3 +67,14 @@ swal({
 });
 
 ```
+
+
+### You can add as many variations as you want through the code site
+
+https://sweetalert.js.org
+
+
+
+
+
+
